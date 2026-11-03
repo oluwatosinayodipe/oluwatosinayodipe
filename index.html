@@ -1,15 +1,648 @@
-yourname.github.io/
-│
-├── index.html
-│
-├── assets/
-│   ├── images/
-│   │   ├── m22.jpg
-│   │   ├── lightsheer.jpg
-│   │   ├── gentlespin.jpg
-│   │   └── dream-oct.jpg
-│   │
-│   └── documents/
-│       └── resume.pdf
-│
-└── README.md
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Oluwatosin Ayodipe | Engineering Portfolio</title>
+
+<meta name="description" content="Engineering portfolio of Oluwatosin Ayodipe, showcasing medical device servicing, laser technology, electronics troubleshooting and engineering projects.">
+
+<style>
+:root {
+  --background: #0b1420;
+  --panel: #142435;
+  --panel-light: #1b3044;
+  --accent: #43d9d0;
+  --text: #f1f5f9;
+  --muted: #aab9c8;
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--background);
+  color: var(--text);
+  line-height: 1.7;
+}
+
+header {
+  padding: 85px 8% 75px;
+  text-align: center;
+  background: linear-gradient(135deg, #142b40, #0b1420);
+}
+
+header h1 {
+  font-size: clamp(32px, 5vw, 52px);
+  margin-bottom: 10px;
+}
+
+header p {
+  color: var(--muted);
+  margin: 8px 0;
+}
+
+.tagline {
+  color: var(--accent);
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  padding: 15px;
+  text-align: center;
+  background: #09111b;
+  border-bottom: 1px solid #263b4d;
+}
+
+nav a {
+  color: var(--text);
+  text-decoration: none;
+  margin: 0 12px;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+section {
+  padding: 55px 9%;
+  max-width: 1250px;
+  margin: auto;
+}
+
+h2 {
+  color: var(--accent);
+  font-size: 27px;
+  margin-bottom: 25px;
+}
+
+h3 {
+  color: white;
+}
+
+p, li {
+  color: var(--muted);
+}
+
+.card {
+  background: var(--panel);
+  padding: 24px;
+  margin: 18px 0;
+  border-radius: 12px;
+  border: 1px solid #263b4d;
+}
+
+.card:hover {
+  border-color: var(--accent);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.equipment {
+  background: var(--panel);
+  padding: 22px;
+  border-radius: 12px;
+  border: 1px solid #263b4d;
+}
+
+.equipment h3 {
+  margin-top: 0;
+  color: var(--accent);
+}
+
+.tag {
+  display: inline-block;
+  background: #203b4c;
+  color: var(--accent);
+  padding: 5px 11px;
+  border-radius: 20px;
+  font-size: 12px;
+  margin: 4px;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 22px;
+  background: var(--accent);
+  color: #07151b;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  margin: 10px 5px;
+}
+
+.button:hover {
+  background: white;
+}
+
+ul {
+  padding-left: 22px;
+}
+
+li {
+  margin-bottom: 9px;
+}
+
+a {
+  color: var(--accent);
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #09111b;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.small {
+  font-size: 14px;
+}
+
+@media (max-width: 650px) {
+  nav a {
+    display: inline-block;
+    margin: 5px;
+  }
+
+  section {
+    padding: 40px 6%;
+  }
+
+  header {
+    padding: 60px 6%;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <p class="tagline">ENGINEERING • MEDICAL TECHNOLOGY • INNOVATION</p>
+
+  <h1>Oluwatosin Segun Ayodipe</h1>
+
+  <p>Electronics Engineering Technology</p>
+
+  <p>
+    Medical Laser Systems | Medical Device Servicing |
+    Electronics Troubleshooting | Calibration
+  </p>
+
+  <p>Kitchener, Ontario, Canada</p>
+
+  <a class="button" href="#experience">Explore My Experience</a>
+  <a class="button" href="#contact">Contact Me</a>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#experience">Experience</a>
+  <a href="#equipment">Equipment</a>
+  <a href="#projects">Projects</a>
+  <a href="#skills">Skills</a>
+  <a href="#education">Education</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<!-- ABOUT -->
+
+<section id="about">
+  <h2>About Me</h2>
+
+  <div class="card">
+    <p>
+      I am an Electronics Engineering Technology student at
+      Conestoga College with a Bachelor of Science in Electronics
+      and Electrical Engineering.
+    </p>
+
+    <p>
+      I currently work as a Technical Service Associate Co-op
+      at Clarion Medical Technologies, where I gain practical
+      experience servicing, troubleshooting, repairing and
+      performing quality control on advanced medical,
+      laser and electro-optical equipment.
+    </p>
+
+    <p>
+      My technical interests include medical laser technology,
+      electronics, optical systems, embedded systems,
+      equipment diagnostics and engineering innovation.
+    </p>
+
+    <p>
+      I enjoy understanding how complex systems work,
+      identifying faults and developing practical solutions
+      that improve equipment reliability and performance.
+    </p>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+
+<section id="experience">
+  <h2>Professional Experience</h2>
+
+  <div class="card">
+    <h3>Technical Service Associate Co-op</h3>
+
+    <p><strong>Clarion Medical Technologies Inc.</strong></p>
+    <p>Cambridge, Ontario | May 2026 – Present</p>
+
+    <ul>
+      <li>Perform servicing, troubleshooting, repair and refurbishment of medical laser and electro-optical systems.</li>
+
+      <li>Carry out quality control, functional testing, calibration investigations and equipment verification.</li>
+
+      <li>Repair and refurbish Lumenis M22 IPL and LightSheer Duet HS and ET laser handpieces.</li>
+
+      <li>Perform component replacement, diagnostic testing and equipment modifications.</li>
+
+      <li>Install and perform quality control on ophthalmic, OCT and aesthetic medical equipment.</li>
+
+      <li>Participate in CSA compliance-related modifications and technical inspections.</li>
+
+      <li>Use digital multimeters, oscilloscopes, DC power supplies and laboratory diagnostic tools.</li>
+
+      <li>Interpret technical documentation, schematics and manufacturer procedures.</li>
+
+      <li>Collaborate with senior technicians and maintain repair and QC documentation.</li>
+    </ul>
+
+    <p><strong>Contribution:</strong> Contributed to saving the company thousands of dollars within the first two months by repairing and refurbishing medical laser handpieces that otherwise would have required replacement.</p>
+  </div>
+
+  <div class="card">
+    <h3>Assistant Telecom Service Engineer</h3>
+
+    <p><strong>Tyllium</strong></p>
+    <p>Lagos, Nigeria | 2019 – 2021</p>
+
+    <ul>
+      <li>Supported installation, testing, troubleshooting and maintenance of telecommunication equipment.</li>
+
+      <li>Assisted with hardware fault diagnosis and electronic testing.</li>
+
+      <li>Performed component replacement, soldering, mechanical assembly and calibration.</li>
+
+      <li>Interpreted schematics, technical drawings and service documentation.</li>
+
+      <li>Recorded maintenance activities and collaborated with engineering teams.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- MEDICAL EQUIPMENT -->
+
+<section id="equipment">
+  <h2>Medical Equipment Experience</h2>
+
+  <p>
+    Medical technologies and systems I have worked with
+    during my technical service experience.
+  </p>
+
+  <h3>Medical Laser & Aesthetic Systems</h3>
+
+  <div class="grid">
+
+    <div class="equipment">
+      <h3>Lumenis M22 IPL</h3>
+      <p>Intense pulsed light medical aesthetic platform.</p>
+      <span class="tag">Troubleshooting</span>
+      <span class="tag">QC</span>
+      <span class="tag">Calibration</span>
+    </div>
+
+    <div class="equipment">
+      <h3>LightSheer Duet HS & ET</h3>
+      <p>Diode laser hair-removal systems and handpieces.</p>
+      <span class="tag">Handpiece Repair</span>
+      <span class="tag">Diagnostics</span>
+      <span class="tag">Refurbishment</span>
+    </div>
+
+    <div class="equipment">
+      <h3>Lucent IPL 220V</h3>
+      <p>IPL aesthetic treatment system.</p>
+      <span class="tag">QC</span>
+      <span class="tag">Testing</span>
+    </div>
+
+    <div class="equipment">
+      <h3>Tixel 2 Pro</h3>
+      <p>Aesthetic dermatological treatment equipment.</p>
+      <span class="tag">Inspection</span>
+      <span class="tag">QC</span>
+    </div>
+
+    <div class="equipment">
+      <h3>Derma DP4 Pen</h3>
+      <p>Dermatological microneedling equipment.</p>
+      <span class="tag">QC</span>
+    </div>
+
+    <div class="equipment">
+      <h3>EVE Muse Facial Analyzer</h3>
+      <p>Facial imaging and skin analysis equipment.</p>
+      <span class="tag">Inspection</span>
+      <span class="tag">QC</span>
+    </div>
+
+    <div class="equipment">
+      <h3>LUVO Bela MD+</h3>
+      <p>Multifunctional aesthetic treatment system.</p>
+      <span class="tag">CSA Work</span>
+      <span class="tag">Inspection</span>
+    </div>
+
+    <div class="equipment">
+      <h3>LUVO Eunsung V2</h3>
+      <p>Medical aesthetic injector system.</p>
+      <span class="tag">Repair</span>
+      <span class="tag">QC</span>
+    </div>
+
+    <div class="equipment">
+      <h3>Poly Stand LED Therapy</h3>
+      <p>LED light therapy equipment.</p>
+      <span class="tag">Installation</span>
+      <span class="tag">QC</span>
+    </div>
+
+  </div>
+
+  <h3>Ophthalmic & Optical Diagnostic Systems</h3>
+
+  <div class="grid">
+
+    <div class="equipment">
+      <h3>Optovue iVue 80</h3>
+      <p>Optical coherence tomography imaging system.</p>
+      <span class="tag">Installation</span>
+      <span class="tag">QC</span>
+    </div>
+
+    <div class="equipment">
+      <h3>Optovue Solix</h3>
+      <p>OCT ophthalmic imaging system.</p>
+      <span class="tag">Installation</span>
+      <span class="tag">QC</span>
+    </div>
+
+    <div class="equipment">
+      <h3>Dream OCT 200 kHz</h3>
+      <p>High-speed optical coherence tomography system.</p>
+      <span class="tag">CSA Work</span>
+      <span class="tag">QC</span>
+    </div>
+
+    <div class="equipment">
+      <h3>Oculus Pentacam</h3>
+      <p>Ophthalmic corneal imaging and diagnostic system.</p>
+      <span class="tag">Installation</span>
+      <span class="tag">QC</span>
+    </div>
+
+    <div class="equipment">
+      <h3>Tracey iTrace</h3>
+      <p>Wavefront aberrometer and ophthalmic diagnostic system.</p>
+      <span class="tag">Inspection</span>
+      <span class="tag">QC</span>
+    </div>
+
+    <div class="equipment">
+      <h3>Reichert ClearChart 4</h3>
+      <p>Computerized digital visual acuity chart.</p>
+      <span class="tag">Installation</span>
+      <span class="tag">QC</span>
+    </div>
+
+    <div class="equipment">
+      <h3>Mediworks S390L Firefly</h3>
+      <p>Digital module slit lamp ophthalmic equipment.</p>
+      <span class="tag">Module Replacement</span>
+      <span class="tag">Repair</span>
+    </div>
+
+  </div>
+
+  <h3>Medical & Laboratory Equipment</h3>
+
+  <div class="grid">
+
+    <div class="equipment">
+      <h3>GentleSpin</h3>
+      <p>Blood separation centrifuge system.</p>
+      <span class="tag">Inspection</span>
+      <span class="tag">QC</span>
+    </div>
+
+    <div class="equipment">
+      <h3>Zimmer Cryo 6</h3>
+      <p>Medical cooling system.</p>
+      <span class="tag">Inspection</span>
+      <span class="tag">QC</span>
+    </div>
+
+    <div class="equipment">
+      <h3>Pro-Vak Scavenger Pump</h3>
+      <p>Medical equipment fume and plume extraction system.</p>
+      <span class="tag">CSA Work</span>
+      <span class="tag">Inspection</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROJECTS -->
+
+<section id="projects">
+  <h2>Engineering Projects</h2>
+
+  <div class="card">
+    <h3>Automatic Street Light & Smart Bus Stop Fan Controller</h3>
+
+    <p>2025 | TM4C123 Microcontroller</p>
+
+    <ul>
+      <li>Designed an automatic street lighting system using ambient light detection.</li>
+
+      <li>Developed temperature-based automatic fan control for a bus stop.</li>
+
+      <li>Applied embedded C programming and sensor interfacing.</li>
+
+      <li>Integrated LCD display, keypad control and motor control.</li>
+
+      <li>Implemented manual override and configurable operating thresholds.</li>
+    </ul>
+
+    <span class="tag">Embedded C</span>
+    <span class="tag">Microcontrollers</span>
+    <span class="tag">Sensors</span>
+    <span class="tag">Motor Control</span>
+  </div>
+
+  <div class="card">
+    <h3>Portable Linear DC Power Supply</h3>
+
+    <p>Electronics Engineering Laboratory Project</p>
+
+    <ul>
+      <li>Designed and assembled a portable linear DC power supply.</li>
+
+      <li>Applied electronic circuit design, component selection and testing.</li>
+
+      <li>Used laboratory instruments to test circuit operation and output performance.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Electronics Engineering Laboratory Projects</h3>
+
+    <p>2024 – Present</p>
+
+    <ul>
+      <li>Designed, assembled and tested analog and digital electronic circuits.</li>
+
+      <li>Performed circuit troubleshooting and measurements.</li>
+
+      <li>Used oscilloscopes, digital multimeters and regulated DC power supplies.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills">
+  <h2>Technical Skills</h2>
+
+  <div class="card">
+
+    <h3>Medical Device & Laser Technology</h3>
+    <span class="tag">Medical Laser Systems</span>
+    <span class="tag">IPL Technology</span>
+    <span class="tag">OCT Systems</span>
+    <span class="tag">Optical Equipment</span>
+    <span class="tag">Handpiece Refurbishment</span>
+    <span class="tag">Equipment QC</span>
+
+    <h3>Electronics & Diagnostics</h3>
+    <span class="tag">Fault Diagnosis</span>
+    <span class="tag">Component Replacement</span>
+    <span class="tag">Circuit Troubleshooting</span>
+    <span class="tag">Calibration</span>
+    <span class="tag">Soldering</span>
+    <span class="tag">Functional Testing</span>
+
+    <h3>Test Equipment</h3>
+    <span class="tag">Digital Multimeter</span>
+    <span class="tag">Oscilloscope</span>
+    <span class="tag">DC Power Supply</span>
+    <span class="tag">Laboratory Instruments</span>
+
+    <h3>Engineering & Technical Knowledge</h3>
+    <span class="tag">Embedded C</span>
+    <span class="tag">TM4C123 Microcontroller</span>
+    <span class="tag">Schematics</span>
+    <span class="tag">CSA Compliance Work</span>
+    <span class="tag">Technical Documentation</span>
+    <span class="tag">Telecommunications</span>
+
+    <h3>Professional Skills</h3>
+    <span class="tag">Problem Solving</span>
+    <span class="tag">Teamwork</span>
+    <span class="tag">Technical Communication</span>
+    <span class="tag">Analytical Thinking</span>
+
+  </div>
+</section>
+
+<!-- EDUCATION -->
+
+<section id="education">
+  <h2>Education</h2>
+
+  <div class="card">
+    <h3>Advanced Diploma – Electronics Engineering Technology (Co-op)</h3>
+
+    <p>Conestoga College | Cambridge, Ontario</p>
+    <p>2024 – Present</p>
+
+    <p>
+      Relevant coursework: Electronics Engineering Skills,
+      Digital Electronics, AC Circuits, Microprocessors,
+      Transmission Lines & Fiber Optics, and Principles
+      of Telecommunication Systems.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Bachelor of Science – Electronics and Electrical Engineering</h3>
+
+    <p>Obafemi Awolowo University | Osun State, Nigeria</p>
+    <p>2015 – 2022</p>
+
+    <p>
+      Relevant coursework: Signals and Telecommunication Systems,
+      Digital Signal Processing, Communication Principles,
+      electronic circuit analysis and laboratory testing.
+    </p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+  <h2>Let's Connect</h2>
+
+  <div class="card">
+    <p>
+      I am interested in medical technology, laser systems,
+      electronics engineering, technical service and innovative
+      engineering solutions.
+    </p>
+
+    <p><strong>Location:</strong> Kitchener, Ontario, Canada</p>
+
+    <p>
+      <strong>Email:</strong>
+      <a href="mailto:Oayodipe1154@conestogac.on.ca">
+        Oayodipe1154@conestogac.on.ca
+      </a>
+    </p>
+
+    <p>
+      <strong>LinkedIn:</strong>
+      <a href="https://linkedin.com/in/oluwatosincareer"
+      target="_blank" rel="noopener noreferrer">
+        linkedin.com/in/oluwatosincareer
+      </a>
+    </p>
+  </div>
+</section>
+
+<footer>
+  <p>Oluwatosin Segun Ayodipe | Engineering Portfolio</p>
+  <p>Medical Technology • Electronics • Engineering Innovation</p>
+  <p>© 2026</p>
+</footer>
+
+</body>
+</html>
